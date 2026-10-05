@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>CSS Box Model, Display and Position</title>
+
+    <style>
+
+        /* Body */
+        body {
+            font-family: Arial;
+            margin: 20px;
+            background-color: lightgray;
+        }
+
+        /* Header */
+        .header {
+            background-color: darkblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Box Model */
+        .box {
+            background-color: white;
+
+            width: 500px;
+            height: 150px;
+
+            padding: 20px;
+            border: 5px solid green;
+            margin: 30px auto;
+        }
+
+        /* Display Properties */
+        .block {
+            display: block;
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .inline {
+            display: inline;
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        .inline-block {
+            display: inline-block;
+            background-color: lightgreen;
+            width: 150px;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        /* Position Properties */
+        .position-container {
+            height: 250px;
+            background-color: white;
+            border: 2px solid black;
+            position: relative;
+            margin-top: 30px;
+            padding: 20px;
+        }
+
+        .static {
+            position: static;
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        .relative {
+            position: relative;
+            left: 30px;
+            top: 10px;
+            background-color: orange;
+            padding: 10px;
+            width: 150px;
+        }
+
+        .absolute {
+            position: absolute;
+            right: 20px;
+            top: 100px;
+            background-color: pink;
+            padding: 10px;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: red;
+            color: white;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>CSS Layout Demonstration</h1>
+    </div>
+
+    <!-- Box Model -->
+    <h2>1. CSS Box Model</h2>
+
+    <div class="box">
+
+        <h3>Box Model</h3>
+
+        <p>
+            This box demonstrates
+            width, height, padding,
+            border and margin.
+        </p>
+
+    </div>
+
+
+    <!-- Display Properties -->
+    <h2>2. CSS Display Properties</h2>
+
+    <div class="block">
+        Block Element
+    </div>
+
+    <span class="inline">
+        Inline Element
+    </span>
+
+    <div class="inline-block">
+        Inline-Block 1
+    </div>
+
+    <div class="inline-block">
+        Inline-Block 2
+    </div>
+
+
+    <!-- Position Properties -->
+    <h2>3. CSS Position Properties</h2>
+
+    <div class="position-container">
+
+        <div class="static">
+            Static Position
+        </div>
+
+        <br>
+
+        <div class="relative">
+            Relative Position
+        </div>
+
+        <div class="absolute">
+            Absolute Position
+        </div>
+
+    </div>
+
+    <!-- Fixed Position -->
+    <div class="fixed">
+        Fixed Position
+    </div>
+
+</body>
+
+</html>
