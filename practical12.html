@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>HTML Forms</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            background-color: lightgray;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        .form-box {
+            background-color: white;
+            width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid darkblue;
+        }
+
+        h2 {
+            color: green;
+        }
+
+        label {
+            display: inline-block;
+            width: 130px;
+            margin-bottom: 10px;
+        }
+
+        input, select, textarea {
+            padding: 7px;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 250px;
+            height: 80px;
+        }
+
+        button {
+            background-color: darkblue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            margin: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>HTML Forms</h1>
+
+
+    <!-- Student Registration Form -->
+
+    <div class="form-box">
+
+        <h2>1. Student Registration Form</h2>
+
+        <form>
+
+            <label>Full Name:</label>
+            <input type="text" name="name">
+            <br>
+
+            <label>Email:</label>
+            <input type="email" name="email">
+            <br>
+
+            <label>Password:</label>
+            <input type="password" name="password">
+            <br>
+
+            <label>Mobile Number:</label>
+            <input type="tel" name="mobile">
+            <br>
+
+            <label>Date of Birth:</label>
+            <input type="date" name="dob">
+            <br>
+
+            <label>Gender:</label>
+
+            <input type="radio" name="gender" value="male">
+            Male
+
+            <input type="radio" name="gender" value="female">
+            Female
+
+            <br><br>
+
+            <label>Course:</label>
+
+            <select name="course">
+                <option>B.Sc. CSIT</option>
+                <option>BCA</option>
+                <option>BCA Honors</option>
+                <option>MCA</option>
+            </select>
+
+            <br>
+
+            <label>Skills:</label>
+
+            <input type="checkbox" name="skill" value="html">
+            HTML
+
+            <input type="checkbox" name="skill" value="css">
+            CSS
+
+            <input type="checkbox" name="skill" value="python">
+            Python
+
+            <br><br>
+
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+
+        </form>
+
+    </div>
+
+
+    <!-- Login Form -->
+
+    <div class="form-box">
+
+        <h2>2. Login Form</h2>
+
+        <form>
+
+            <label>Username:</label>
+            <input type="text" name="username">
+            <br>
+
+            <label>Password:</label>
+            <input type="password" name="password">
+            <br>
+
+            <input type="checkbox" name="remember">
+            Remember Me
+
+            <br><br>
+
+            <button type="submit">Login</button>
+            <button type="reset">Clear</button>
+
+        </form>
+
+    </div>
+
+
+    <!-- Feedback Form -->
+
+    <div class="form-box">
+
+        <h2>3. Feedback Form</h2>
+
+        <form>
+
+            <label>Student Name:</label>
+            <input type="text" name="name">
+            <br>
+
+            <label>Rating:</label>
+
+            <input type="radio" name="rating" value="excellent">
+            Excellent
+
+            <input type="radio" name="rating" value="good">
+            Good
+
+            <input type="radio" name="rating" value="average">
+            Average
+
+            <br><br>
+
+            <label>Topics:</label>
+
+            <input type="checkbox" name="topic">
+            HTML
+
+            <input type="checkbox" name="topic">
+            CSS
+
+            <input type="checkbox" name="topic">
+            Forms
+
+            <br><br>
+
+            <label>Feedback:</label>
+
+            <textarea name="feedback"></textarea>
+
+            <br>
+
+            <button type="submit">Submit Feedback</button>
+            <button type="reset">Reset</button>
+
+        </form>
+
+    </div>
+
+
+    <!-- Contact Form -->
+
+    <div class="form-box">
+
+        <h2>4. Contact Form</h2>
+
+        <form>
+
+            <label>Name:</label>
+            <input type="text" name="name">
+            <br>
+
+            <label>Email:</label>
+            <input type="email" name="email">
+            <br>
+
+            <label>Subject:</label>
+            <input type="text" name="subject">
+            <br>
+
+            <label>Contact Type:</label>
+
+            <select name="type">
+                <option>General Enquiry</option>
+                <option>Technical Support</option>
+                <option>Admission Enquiry</option>
+                <option>Other</option>
+            </select>
+
+            <br>
+
+            <label>Message:</label>
+
+            <textarea name="message"></textarea>
+
+            <br>
+
+            <button type="submit">Send Message</button>
+            <button type="reset">Clear</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
