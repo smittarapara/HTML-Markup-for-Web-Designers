@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>HTML5 Input Types and Form Validation</title>
+
+</head>
+
+<body>
+
+    <h1>Student Information Form</h1>
+
+    <form>
+
+        <!-- Name -->
+        <label>Student Name:</label>
+        <input type="text"
+               name="name"
+               required
+               minlength="3"
+               maxlength="30"
+               pattern="[A-Za-z ]+"
+               placeholder="Enter your name">
+
+        <br><br>
+
+
+        <!-- Email -->
+        <label>Email:</label>
+        <input type="email"
+               name="email"
+               required
+               placeholder="Enter your email">
+
+        <br><br>
+
+
+        <!-- Password -->
+        <label>Password:</label>
+        <input type="password"
+               name="password"
+               required
+               minlength="8"
+               maxlength="20"
+               placeholder="Enter password">
+
+        <br><br>
+
+
+        <!-- Date -->
+        <label>Date of Birth:</label>
+        <input type="date"
+               name="dob"
+               required
+               min="2000-01-01"
+               max="2010-12-31">
+
+        <br><br>
+
+
+        <!-- Number -->
+        <label>Age:</label>
+        <input type="number"
+               name="age"
+               required
+               min="18"
+               max="30">
+
+        <br><br>
+
+
+        <!-- Range -->
+        <label>Course Rating:</label>
+        <input type="range"
+               name="rating"
+               min="1"
+               max="10">
+
+        <br><br>
+
+
+        <!-- Color -->
+        <label>Favorite Color:</label>
+        <input type="color"
+               name="color">
+
+        <br><br>
+
+
+        <!-- File Upload -->
+        <label>Upload Photo:</label>
+        <input type="file"
+               name="photo"
+               required>
+
+        <br><br>
+
+
+        <!-- Mobile Number with Pattern -->
+        <label>Mobile Number:</label>
+        <input type="text"
+               name="mobile"
+               required
+               minlength="10"
+               maxlength="10"
+               pattern="[0-9]{10}"
+               placeholder="Enter 10 digit number">
+
+        <br><br>
+
+
+        <!-- Submit and Reset -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+
+</html>
